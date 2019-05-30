@@ -927,7 +927,8 @@ class Visdom(object):
 
             # If opts title is not added, the title is not added to the top right of the window.
             # We add the paramater to opts manually if it exists.
-            opts = dict()
+            #opts = dict()
+            opts = figure_dict['layout']
             if 'title' in figure_dict['layout']:
                 title_prop = figure_dict['layout']['title']
 
