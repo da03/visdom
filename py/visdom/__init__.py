@@ -177,6 +177,8 @@ def _opts2layout(opts, is3d=False):
     layout = {
         'showlegend': opts.get('showlegend', 'legend' in opts),
         'title': opts.get('title'),
+        'width': opts.get('width'),
+        'height': opts.get('height'),
         'margin': {
             'l': opts.get('marginleft', 0 if is3d else 60),
             'r': opts.get('marginright', 60),

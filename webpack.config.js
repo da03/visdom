@@ -15,7 +15,7 @@ module.exports = {
     filename: 'py/visdom/static/js/main.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,

@@ -1400,6 +1400,7 @@ class App extends React.Component {
         let panelayout = getLayoutItem(this.state.layout, id);
         let filter = this.getValidFilter(this.state.filter);
         let isVisible = pane.title.match(filter);
+window.alert(panelayout.w);
         return (
           <div key={pane.id} className={isVisible ? '' : 'hidden-window'}>
             <Comp
@@ -1409,7 +1410,7 @@ class App extends React.Component {
               onFocus={this.focusPane}
               onInflate={this.onInflate}
               isFocused={pane.id === this.state.focusedPaneID}
-              w={panelayout.w}
+              w={panelayout.w*5}
               h={panelayout.h}
               appApi={{ sendPaneMessage: this.sendPaneMessage }}
             />
